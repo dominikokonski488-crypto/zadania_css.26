@@ -1,21 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl">
 <head>
-    <meta charset="utf-8">
-    <title>Okonski Z15_html</title>
-    <link rel="stylesheet" type="text/css" href="okon_z15.css">
+<meta charset="UTF-8">
+<title>Zad.15</title>
+<link rel="stylesheet" href="zast_z15.css">
 </head>
 <body>
-    <p>Okonski, klasa 1p</p>
-    <p>Mój numer z dziennika to 16</p>
 
-    <p class="blue">😊 – uśmiech</p>
-    <p class="green">😎 – okulary</p>
-    <p class="blue">😜 – wytyknięty język</p>
-    <p class="green">😢 – smutek</p>
-    <p class="blue">🤔 – myślenie</p>
-    <p class="green">❤️ – serce</p>
+<div class="blok1">
+Autor: Jan Zastawny klasa 2W<br>
+mam na imię Jan czyli trzy litery J=3<br>
+mam na nazwisko Zastawny czyli osiem liter N=8<br>
+mój numer z dziennika to 7<br>
+data urodzenia: 10.11.2006, numer buta=9<br>
+numer miesiąca urodzenia=11(listopad)<br>
+numer dnia urodzenia=10(dziesiąty dzień)
+<br><br>
+_______________________________
+<br>
+definiowanie koloru znacznika p<br>
+Zmiana kolor liter --> sposobem pierwszym z tabeli/instrukcja<br>
+100+numer miesiaca urodzenia=100+11=(111)10→(6F)H<br>
+150+numer dnia urodzenia=150+10=(160)10→(A0)H<br>
+50+numer buta=50+9=(59)10→(#3B)H<br>
+czyli kolor w HEXA #6FA2B3 dla znacznika p<br>
+wypisz: znacznik p --> kolor=#6FA2B3; wielkość liter 18mm
+<br><br>
+_______________________________
+<br>
+definiowanie koloru znacznika body<br>
+Zmiana kolor liter--> sposobem czwartym z tabeli/instrukcja<br>
+R=125+numer dnia urodzenia=125+10=135 R=135/255*100%=53%<br>
+G=50+numer buta=50+9=59 G=59/255*100%=23%<br>
+B=200+numer miesiąca urodzenia=200+11=211 B=211/255*100%=83%<br>
+czyli kolor w RGB 53%,23%,83% dla znacznika body<br>
+znacznik body ---> {color: rgb(53%,23%,83%);} ; wielkość liter 13mm
+</div>
 
-    <!-- Okonski Z15_html -->
+<div class="ramka">
+<p class="duzy">:) - uśmiech</p>
+<p class="maly">;C - duży smutek</p>
+<p class="duzy">:P - pokazanie języka</p>
+<p class="maly">:O - zdziwienie</p>
+<p class="duzy">;/ - sceptycyzm</p>
+</div>
+
+
+
 </body>
 </html>
