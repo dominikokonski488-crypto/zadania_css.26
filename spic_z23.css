@@ -1,0 +1,39 @@
+#pogrubienie_spitsarev {
+    font-weight: bold;
+    font-size: 34px;
+    color: #9d5adf;
+}
+
+#pochylona_spitsarev {
+    font-style: italic;
+    font-size: 39pt;
+    color: #fc6b31;
+}
+
+#index_gorny_spitsarev {
+    vertical-align: super;
+    font-size: 1.4cm;
+    color: #b3d42d;
+}
+
+#index_dolny_spitsarev {
+    vertical-align: sub;
+    font-size: 2.3cm;
+    color: rgb(74%, 95%, 22%);
+}
+
+#mono_spitsarev {
+    font-family: monospace;
+    font-size: 44px;
+    color: #2e7b6b;
+}
+
+#powiekszenie_spitsarev {
+    font-size: larger;
+    color: #c64a96;
+}
+
+#pomniejszenie_spitsarev {
+    font-size: smaller;
+    color: rgb(67%, 64%, 21%);
+}
