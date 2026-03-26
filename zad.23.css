@@ -1,39 +1,39 @@
 #pogrubienie_Okoński {
     font-weight: bold;
-    font-size: 34px;
-    color: #9d5adf;
+    font-size: 32px;
+    color: navy;
 }
 
 #pochylona_Okoński {
     font-style: italic;
-    font-size: 39pt;
-    color: #fc6b31;
+    font-size: 37pt;
+    color: green;
 }
 
 #index_gorny_Okoński {
     vertical-align: super;
-    font-size: 1.4cm;
-    color: #b3d42d;
+    font-size: 1.5cm;
+    color: blue;
 }
 
 #index_dolny_Okoński {
     vertical-align: sub;
     font-size: 2.3cm;
-    color: rgb(74%, 95%, 22%);
+    color: rgb(78%, 45%, 90%);
 }
 
 #mono_Okoński {
     font-family: monospace;
-    font-size: 44px;
-    color: #2e7b6b;
+    font-size: 42px;
+    color: red;
 }
 
 #powiekszenie_Okoński {
     font-size: larger;
-    color: #c64a96;
+    color: yellow;
 }
 
 #pomniejszenie_Okoński {
     font-size: smaller;
-    color: rgb(67%, 64%, 21%);
+    color: rgb(69%, 67%, 24%);
 }
