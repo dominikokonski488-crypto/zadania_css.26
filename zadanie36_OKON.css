@@ -1,55 +1,53 @@
-body {
-    background-color: #dcdcdc;
-    font-family: "Times New Roman", serif;
-}
+ body {
+            background-color: #f7d3de;
+            margin: 30px;
+            font-family: Georgia, serif;
+        }
 
+        .blok {
+            background-color: #5f78f0;
+            border: 2px solid #003366;
+            padding: 15px;
+            margin-bottom: 12px;
+        }
 
-.container {
-    width: 900px;
-    margin: 40px auto;
-    background-color: #ff6f9c;
-    padding: 15px;
-    border: 3px solid black;
-}
+        h1, h2, h3 {
+            text-align: center;
+            margin: 0 auto;
+            padding: 10px;
+        }
 
+        h1 {
+            background-color: yellow;
+            color: black;
+            width: 90%;
+            border: 2px solid #333;
+            font-size: 24px;
+            font-weight: bold;
+        }
 
-.box {
-    background-color: #5c7bd9;
-    margin: 15px 0;
-    padding: 20px;
-    border: 3px solid #1b2f7a;
-    text-align: center;
-}
+        
+        h2 {
+            background-color: #c97b7b;
+            color: black;
+            width: 85%;
+            font-size: 20px;
 
+            border-top: 6px dotted red;
+            border-right: 6px dashed green;
+            border-bottom: 6px double blue;
+            border-left: 6px solid black;
+        }
 
-h1 {
-    margin: 0 auto;
-    width: 80%;
-    padding: 10px;
-    background-color: yellow;
-    border: 4px solid black;
-}
+       
+        h3 {
+            background-color: #7ea2e8;
+            color: #111;
+            width: 80%;
+            font-size: 18px;
 
-
-h2 {
-    margin: 0 auto;
-    width: 70%;
-    padding: 10px;
-    background-color: #c96a6a;
-    border-top: 5px dotted black;
-    border-bottom: 5px dashed black;
-    border-left: 5px solid black;
-    border-right: 5px double black;
-}
-
-
-h3 {
-    margin: 0 auto;
-    width: 60%;
-    padding: 10px;
-    background-color: #7fa6d9;
-    border-top: 5px groove black;
-    border-bottom: 5px ridge black;
-    border-left: 5px inset black;
-    border-right: 5px outset black;
-}
+            border-top: 5px groove purple;
+            border-right: 5px ridge orange;
+            border-bottom: 5px inset brown;
+            border-left: 5px solid black;
+        }
