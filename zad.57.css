@@ -1,0 +1,18 @@
+﻿*
+{
+background-color:yellow; /* żółty */
+color:blue; /*niebieski*/
+font-size: 37px;
+}
+
+p.klasa_nieuniwersalna_Okoński
+{
+    font-size: 34pt; /*34*/
+    color: purple; /*fioletowy*/
+        
+}
+h1.uniwersalna_Okoński
+{
+    font-size:21pt;
+    color: black; /*czarny*/
+}
