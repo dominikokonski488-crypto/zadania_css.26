@@ -1,0 +1,23 @@
+/* Dominik Okonski, nr 16 */
+/* kolor p: niebieski, p:lang(pl): zolty, p:lang(en): zloty */
+/* wielkosc p: 5+(7%4)=8mm, lang(pl): 6+(7%4)=9mm, lang(en): 10+(7%4)=13mm */
+
+body {
+  background-color: silver;
+}
+
+p {
+  font-size: 8mm;
+  color: blue;
+}
+
+p:lang(pl) {
+  font-size: 9mm;
+  color: yellow;
+}
+
+p:lang(en) {
+  font-size: 13mm;
+  color: gold;
+}
+/* Okonski Z62_css */

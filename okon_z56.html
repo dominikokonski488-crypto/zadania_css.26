@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Okonski Z56_html</title>
+  <style>
+    body { font-family: Arial, sans-serif; }
+    strong { font-weight: bold; }
+  </style>
+</head>
+<body>
+
+<h1>1) Składnia teoretyczna definiowania klasy</h1>
+<p>selektor.klasa { cecha: wartość }</p>
+
+<h1>2) Opis: klasa, "cecha" oraz "wartość"</h1>
+<p>Klasa to wartość atrybutu <code>class="..."</code> nadanego selektorowi z poziomu HTML.<br>
+"cecha" oraz "wartość" określają atrybuty elementu nadane przez style CSS.</p>
+
+<h1>3) Jaki znacznik może być selektorem? Trzy przykłady:</h1>
+<p>Selektorem może być dowolny znacznik HTML, np.:<br>
+<code>p</code> – akapit<br>
+<code>h1</code> – tytuł pierwszego stopnia<br>
+<code>td</code> – komórka tabeli</p>
+
+<h1>4) Uwagi na temat nazwy klas</h1>
+<p>Nazwą może być <strong>dowolny pojedynczy wyraz</strong>, który nie może zawierać:<br>
+a) <strong>spacji</strong><br>
+b) <strong>kropki, przecinka, dwukropka</strong><br>
+...aż do...<br>
+h) <strong>znaku równości, plusa, nawiasów</strong><br>
+Może zawierać:<br>
+a) <strong>litery A-Z, a-z</strong><br>
+b) <strong>cyfry 0-9</strong><br>
+c) <strong>myślniki (-)</strong><br>
+d) <strong>podkreślniki (_)</strong><br>
+Nazwa nie może zaczynać się od <strong>cyfry ani myślnika</strong>.<br>
+Gdy chcemy użyć znaków "zakazanych", należy <strong>poprzedzić je odwróconym ukośnikiem \</strong>.</p>
+
+<h1>5) Zastosowanie klas</h1>
+<p>Klasy są przydatne, gdy wiele elementów na różnych stronach ma takie samo formatowanie,
+a nie możemy użyć selektora typu, bo inne znaczniki tego samego rodzaju mają być inaczej sformatowane.</p>
+
+<h1>6) Kiedy ma zastosowanie lista klas?</h1>
+<p>Lista klas ma zastosowanie, gdy chcemy przypisać do jednego elementu kilka różnych klas jednocześnie:<br>
+<code>&lt;selektor class="klasa1 klasa2 klasa3"&gt;...&lt;/selektor&gt;</code></p>
+
+<h1>7) Składnia listy klas i uwagi</h1>
+<p><code>&lt;selektor class="klasa1 klasa2 klasa3"&gt;...&lt;/selektor&gt;</code><br>
+Uwagi: klasy muszą być zdefiniowane w arkuszu stylów.
+Kolejność wpisywania nazw klas nie ma znaczenia – jeśli kilka klas odnosi się do tej samej własności, decyduje zasada kaskadowości.</p>
+
+<h1>8) Podzbiory klas – składnia</h1>
+<p>Podzbiór klas pozwala określić, jakie klasy musi mieć element jednocześnie:<br>
+<code>selektor.klasa1.klasa3 { cecha: wartość }</p>
+<p>Zmienia formatowanie elementu: <code>&lt;selektor class="klasa1 klasa2 klasa3"&gt;</code></p>
+
+<h1>9) Kiedy stosować klasy?</h1>
+<p>Gdy jakiś element o specyficznym formatowaniu występuje przynajmniej raz na niektórych stronach serwisu – jest to sygnał, aby umieścić deklarację jego klasy w zewnętrznym arkuszu stylów.</p>
+
+<h1>10) Kiedy planować klasy?</h1>
+<p>Już na etapie projektowania serwisu należy dokładnie przemyśleć, jakie klasy mogą się przydać. Im więcej klas w zewnętrznym arkuszu, tym łatwiejsza późniejsza modyfikacja stron.</p>
+
+<h1>11) Cel stosowania komentarzy w klasach</h1>
+<p>Komentarze przed każdą definicją klasy (znaki: <code>/* ... */</code>) opisują jej przeznaczenie.
+Po dłuższym czasie, gdy arkusz zawiera wiele klas, komentarze pomagają zapamiętać, do czego dana klasa służy.</p>
+
+<h1>12) Przykład definiowania i wywoływania klasy</h1>
+<p>Definicja w CSS:<br>
+<code>p.przyklad_klasa { color: red; }</code><br>
+Wywołanie w HTML:<br>
+<code>&lt;p class="przyklad_klasa"&gt;To jest akapit.&lt;/p&gt;</code></p>
+
+<h1>13) Klasa nieuniwersalna</h1>
+<p>Klasa nieuniwersalna odnosi się tylko do jednego selektora.<br>
+Definicja:<br>
+<code>p.moja { color: green; font-size: 14pt; }</code><br>
+Wywołanie:<br>
+<code>&lt;p class="moja"&gt;Treść akapitu&lt;/p&gt;</code><br>
+Taka klasa może być użyta tylko w znaczniku &lt;p&gt;, do którego została przypisana.</p>
+
+<h1>14) Klasa uniwersalna i znak *</h1>
+<p>Klasa uniwersalna pozwala przypisać własności do wszystkich elementów, niezależnie od typu znacznika.<br>
+Definicja z gwiazdką:<br>
+<code>*.przyklad_uniwersalna { color: red; }</code><br>
+Definicja bez gwiazdki (gwiazdka jest domyślna):<br>
+<code>.przyklad_uniwersalna { color: red; }</code><br>
+Wywołanie:<br>
+<code>&lt;p class="przyklad_uniwersalna"&gt;akapit&lt;/p&gt;</code><br>
+<code>&lt;h1 class="przyklad_uniwersalna"&gt;nagłówek&lt;/h1&gt;</code><br>
+Znak * oznacza "każdy element" i można go pominąć – efekt jest taki sam.</p>
+
+</body>
+</html>
+<!-- Okonski Z56_html -->

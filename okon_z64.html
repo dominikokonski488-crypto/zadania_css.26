@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Okonski Z64_html</title>
+  <link rel="stylesheet" href="okon_CSS_z64.css" type="text/css" />
+  <style>
+    body { font-family: Arial, sans-serif; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid black; padding: 8px; }
+    th { background-color: #cccccc; }
+    code { background: #eee; padding: 2px 4px; }
+  </style>
+</head>
+<body>
+
+<h1>Zadanie 64 – Teoria: zaokrąglanie narożników i centrowanie DIV</h1>
+
+<h2>1) Tabela: zaokrąglenie narożników obszarów bloków (np. DIV)</h2>
+<table>
+  <tr><th>Narożnik</th><th>Właściwość CSS</th></tr>
+  <tr><td>Górny-lewy</td>    <td><code>border-top-left-radius: wartość</code></td></tr>
+  <tr><td>Górny-prawy</td>   <td><code>border-top-right-radius: wartość</code></td></tr>
+  <tr><td>Dolny-prawy</td>   <td><code>border-bottom-right-radius: wartość</code></td></tr>
+  <tr><td>Dolny-lewy</td>    <td><code>border-bottom-left-radius: wartość</code></td></tr>
+</table>
+
+<h2>2) Zastosowanie i uwagi</h2>
+<p>Selektorem może być dowolny znacznik: p, h1, div itp.<br>
+Wartość "zaokrąglenie" to promień wyrażony w jednostkach długości lub procentach.<br>
+Można podać:<br>
+– jedną wartość → zaokrąglenie symetryczne,<br>
+– dwie wartości → pierwsza: poziomy promień, druga: pionowy promień.<br>
+Element nie musi mieć obramowania – wystarczy tło, żeby efekt był widoczny.<br>
+Uwaga: tekst wewnątrz elementu nie zostaje zawinięty do zaokrąglonych rogów.</p>
+
+<h2>3) Przykład z instrukcji</h2>
+<pre>
+border-top-right-radius: 10px;
+</pre>
+<div style="border: 2px solid black; border-top-right-radius: 10px; padding: 10px; width: 300px;">
+  Przykładowy blok z zaokrąglonym górnym-prawym narożnikiem (10px)
+</div>
+
+<h2>4) Centrowanie bloku DIV</h2>
+<p>W definicji CSS bloku DIV należy wpisać:</p>
+<pre>
+margin-left: auto;
+margin-right: auto;
+</pre>
+<p>Warunek: DIV musi mieć określoną szerokość (właściwość <code>width</code>).</p>
+
+</body>
+</html>
+<!-- Okonski Z64_html -->

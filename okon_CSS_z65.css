@@ -1,0 +1,67 @@
+/* Dominik Okonski, nr 16 (parzysty, grupa 1,4,7,10,13,16) */
+
+body {
+  background-color: silver;
+}
+
+/* Parametry globalne akapitow */
+/* nr 16 parzysty -> 10pt */
+p {
+  font-size: 10pt;
+}
+
+/* Pierwsze akapity blokow */
+/* nr 16 parzysty -> 9mm italic */
+p:first-child {
+  font-size: 9mm;
+  font-style: italic;
+}
+
+/* BLOK 1: jasno zielony, czarny 3px, centrowanie TAK */
+/* szerokosc: 700 + (16*4) = 764pt */
+/* r1=14px, r2=14px, r3=8px */
+div#pierwszy_okonski {
+  background-color: RGB(144, 238, 144);
+  border: 3px solid black;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 14px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 764pt;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+/* BLOK 2: jasno niebieski, granatowy 5px, centrowanie NIE */
+/* szerokosc: 900 + (16*4) = 964pt */
+div#drugi_okonski {
+  background-color: RGB(173, 216, 230);
+  border: 5px solid navy;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 14px;
+  width: 964pt;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+/* BLOK 3: rozowy, fioletowy 7px, centrowanie TAK */
+/* szerokosc: 1100 + (16*4) = 1164pt */
+div#trzeci_okonski {
+  background-color: RGB(255, 182, 193);
+  border: 7px solid purple;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 14px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1164pt;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+/* Okonski Z65_css */

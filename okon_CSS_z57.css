@@ -1,0 +1,27 @@
+/* Selektor uniwersalny - Dominik Okonski, nr 16 (parzysty) */
+/* rozmiar: 30 + 7 liter imienia "Dominik" = 37pt */
+/* kolor liter: niebieski (parzysty), tło: żółte (parzyste) */
+* {
+  font-size: 37pt;
+  color: blue;
+  background-color: yellow;
+}
+
+/* Klasa nieuniwersalna dla znacznika p */
+/* rozmiar: 25 + 7 liter nazwiska "Okonski" = 32pt */
+/* kolor: fioletowy (parzysty) */
+p.klasa_nieuniwersalna_okonski {
+  font-size: 32pt;
+  color: purple;
+  background-color: yellow;
+}
+
+/* Klasa uniwersalna */
+/* rozmiar: 20 + 1 (styczen) = 21pt */
+/* kolor: czarny (parzysty) */
+.klasa_uniwersalna_okonski {
+  font-size: 21pt;
+  color: black;
+}
+
+/* Okonski Z57_css */

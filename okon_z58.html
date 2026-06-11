@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Okonski Z58_html</title>
+  <style>
+    body { font-family: Arial, sans-serif; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid black; padding: 8px; text-align: left; }
+    th { background-color: #cccccc; }
+  </style>
+</head>
+<body>
+
+<h1>1) Co to są pseudoklasy?</h1>
+<p>CSS przewiduje kilka ściśle określonych klas pozwalających na formatowanie niektórych
+elementów dokumentu – są to <strong>pseudoklasy</strong>. Pozwalają one stylizować elementy
+w zależności od ich stanu lub położenia w dokumencie.</p>
+
+<h1>2) Uwaga dotycząca dwukropka</h1>
+<p>Szalenie istotnym elementem w konstrukcji pseudoklasy jest <strong>dwukropek</strong>
+występujący pomiędzy selektorem a nazwą klasy, np. <code>A:hover</code>.</p>
+
+<h1>3) Tabela opisująca pseudoklasy</h1>
+<table>
+  <tr>
+    <th>Pseudoklasa</th>
+    <th>Opis</th>
+  </tr>
+  <tr>
+    <td><code>A:link</code></td>
+    <td>Odpowiada za wygląd hiperłącza, które nie zostało jeszcze odwiedzone.</td>
+  </tr>
+  <tr>
+    <td><code>A:visited</code></td>
+    <td>Odpowiada za formatowanie hiperłącza już odwiedzonego.</td>
+  </tr>
+  <tr>
+    <td><code>A:hover</code></td>
+    <td>Zmiany wyglądu elementu po najechaniu na niego kursorem myszy.</td>
+  </tr>
+  <tr>
+    <td><code>A:active</code></td>
+    <td>Formatowanie elementu po wciśnięciu przycisku myszy, ale przed jego zwolnieniem (link aktywny/klikany).</td>
+  </tr>
+  <tr>
+    <td><code>A:focus</code></td>
+    <td>Formatowanie elementu, który posiada fokus (zaznaczony klawiszem Tab).</td>
+  </tr>
+  <tr>
+    <td><code>:lang</code></td>
+    <td>Formatowanie wielojęzykowych dokumentów – dopasowuje elementy w określonym języku.</td>
+  </tr>
+  <tr>
+    <td><code>:first-child</code></td>
+    <td>Umożliwia określenie formatowania dla pierwszego dziecka wybranego elementu.</td>
+  </tr>
+</table>
+
+<h1>4) Zastosowanie pseudoklasy :active</h1>
+<p>Pseudoklasa <code>:active</code> może być używana:<br>
+1) Jako uzupełnienie definicji odnośników (link wciśnięty).<br>
+2) Jako element poprawiający czytelność formularzy.</p>
+
+<h1>5) Trzy przykłady kodów definiowania pseudoklas</h1>
+
+<p><strong>Przykład 1: :link i :visited</strong><br>
+Temat: Formatowanie odnośnika przed i po odwiedzeniu.</p>
+<pre>
+A:link    { color: red; }
+A:visited { color: green; }
+</pre>
+
+<p><strong>Przykład 2: Pełne formatowanie odnośników</strong><br>
+Temat: Formatowanie wyglądu wszystkich odnośników w dokumencie.</p>
+<pre>
+A { font-size: 12pt; text-decoration: none; }
+A:link    { color: navy; }
+A:visited { color: green; }
+A:hover   { color: red; text-decoration: underline; }
+</pre>
+
+<p><strong>Przykład 3: :focus</strong><br>
+Temat: Zastosowanie pseudoklasy :focus.</p>
+<pre>
+A:focus { color: brown; }
+</pre>
+
+</body>
+</html>
+<!-- Okonski Z58_html -->
